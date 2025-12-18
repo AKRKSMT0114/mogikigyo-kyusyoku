@@ -1,0 +1,24 @@
+/*
+Theme Name: 白砂の丘市立給食センター（模擬企業サイト）
+Description: 麒麟県白砂の丘市の歴史ある給食センターの創立記念も含めたサイトです。（模擬企業サイトです。）
+Author: 岸本明莉
+Version: 1.0.0
+*/
+/* フォントの設定 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+html, body {
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header{}
+
+.logo{}
+
+.logo-name{
+    color: #66B2FF;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.menu-pc a{} 
