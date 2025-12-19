@@ -11,9 +11,18 @@ html, body {
     font-family: 'Noto Sans JP', sans-serif;
 }
 
-.header{}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    height: 70px;
+    margin: auto;
+}
 
-.logo{}
+.logo{
+    
+}
 
 .logo-name{
     color: #66B2FF;
@@ -21,4 +30,30 @@ html, body {
     font-weight: bold;
 }
 
-.menu-pc a{} 
+.menu-pc{
+    display: flex;
+    align-items: center;
+}
+
+.menu-pc li{margin: 0 30px;}
+
+.menu-pc a{font-weight: bold;} 
+
+.menu-pc li:last-child{margin-right: 0;}
+.menu-pc li:last-child a{
+    display: block;
+    color: #fff;
+    background: #66B2FF;
+    padding: 10px 30px;
+    border-radius: 50px;
+}    
+
+/* footer */
+.footer{
+    padding: 50px 0;
+    background: #303030ff;
+}
+.footer p{
+    color: #fff;
+    text-align: center;
+}    
