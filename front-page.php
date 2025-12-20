@@ -2,7 +2,7 @@
 <main>
     <!-- fv -->
     <section class="front-fv">
-        <img src="<?= get_template_directory_uri(); ?>mogikigyo-kyusyoku/img/top" alt="ファーストビュー">
+        <img src="<?= get_template_directory_uri(); ?>/img/top.jpg" alt="ファーストビュー">
         <h2>
             今日も、<span>笑顔</span>がひろがる給食を
         </h2>
