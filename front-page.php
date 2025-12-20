@@ -8,5 +8,10 @@
         </h2>
     </section>
     <!-- fv -->
+    <!-- About -->
+    <section class="front-about">
+        <h2 class="front-common__title">わたしたちについて</h2>
+        <img src="<?= get_template_directory_uri() ?>/img/tuite.png" alt="わたしたちについて">
+    </section>
 </main>
 <?php get_footer() ?>
