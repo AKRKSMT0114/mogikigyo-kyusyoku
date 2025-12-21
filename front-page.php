@@ -13,6 +13,7 @@
         <h2 class="front-common-title">わたしたちについて</h2>
         <img src="<?= get_template_directory_uri() ?>/img/tuite.png" alt="わたしたちについて">
     </section>
+    <!-- process -->
     <section class="front-about">
         <h2 class="front-common-title">給食ができるまで</h2>
         <div class="process-container">
@@ -30,6 +31,8 @@
         </div>
         <h3><a href="#" class="btn-box">給食ができるまで＞</a></h3>
     </section>
+    <!-- process -->
+    <!-- menu -->
     <section class="front-about">
         <h2 class="front-common-title">きょうの献立</h2>
         <div class="today-menu">〇月〇日（金）献立</div>
@@ -37,32 +40,49 @@
             <img src="<?= get_template_directory_uri() ?>/img/kondate.png" alt="献立">
             <div class="menu-item">
                 <div class="menu-section">
-                    <ul>
-                        <li>ご飯</li>
-                        <li>牛乳</li>
-                        <li>井笠港産サーモンのメンチカツ</li>
-                        <li>具だくさん味噌汁</li>
-                        <li>ノンエッグマヨのポテトサラダ</li>
-                        <li>2世紀梨ゼリー</li>
-                        <div class="menu-section-2">
-                            <li>流星米</li>
-                            <li>牛乳</li>
-                            <li>井笠港産サーモン</li>
-                            <li>山大豚</li>
-                            <li>麒麟県産大根</li>
-                            <li>ジャガイモ</li>
-                            <li>2世紀ナシ</li>
-                            <span class="menu-ar">
-                                <p>牛乳</p>
-                                <p>※メンチカツの衣（米粉）</p>
-                                <p>揚げ油（こめ油）</p>
-                            </span>
-                        </div>
-                    </ul>
+                    <p>ご飯</p>
+                    <p>牛乳</p>
+                    <p>井笠港産サーモンのメンチカツ</p>
+                    <p>具だくさん味噌汁</p>
+                    <p>ノンエッグマヨのポテトサラダ</p>
+                    <p>2世紀梨ゼリー</p>
+                    <div class="menu-section-2">
+                        <p>地産地消食材</p>
+
+                        <p>流星米</p>
+                        <p>牛乳</p>
+                        <p>井笠港産サーモン</p>
+                        <p>山大豚</p>
+                        <p>麒麟県産大根</p>
+                        <p>ジャガイモ</p>
+                        <p>2世紀ナシ</p>
+                        <span class="menu-ar">
+                            <p>アレルギー情報</p>
+                            <p>牛乳</p>
+                            <p>※メンチカツの衣（米粉）</p>
+                            <p>揚げ油（こめ油）</p>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
         </div>
+        <h3><a href="#" class="btn-box">きょうの献立＞</a></h3>
     </section>
+    <!-- menu -->
+    <!-- News -->
+    <section class="front-about">
+        <h2 class="front-common-title">おしらせ</h2>
+        <div class="log-box">
+            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
+            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
+            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
+            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
+            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
+        </div>
+        <a href="#" class="btn-box">もっとみる></a>
+        </div>
+    </section>
+    <!-- News -->
 </main>
 <?php get_footer() ?>

@@ -194,7 +194,7 @@ html, body {
 }
 
 .menu-list img{
-    margin: 0 50px;
+    margin: 0 30px;
     object-fit: cover;
     border-radius: 20px;
     width: 100%;
@@ -205,15 +205,18 @@ html, body {
 .menu-item{
     background-color: #ffffff;
     border-radius: 20px;
-    width: 400px;
-    margin: 20px auto;
-    padding: 16px 20px;
+    padding: 0 200px 0 5px;
     border: 3px solid #000000;
 }
 
 .menu-section{
-
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 20px;
 }
+
 
 .menu-section-2{
     display: flex;
@@ -221,6 +224,31 @@ html, body {
 
 .menu-ar{
     color: #66B2FF;
+    gap: 10px;
+
 }
+
+.log-box {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 16px;
+    background-color: #ffffff; 
+    border: 2px solid #000000; 
+    background-color: #66B2FF;
+    border-radius: 12px;
+}
+
+.log-day {
+    max-width: 1100px;
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+    font-size: 0.95rem;
+}
+
+/* 最後の行だけ横線を消す */
+.log-day:last-child {
+  border-bottom: none;
+}
+
 
 
