@@ -152,12 +152,17 @@ html, body {
     border-left: 20px solid #66B2FF; /* 棒と同じ色 */
 }
 
+.process-btn{
+    width: 300px;
+    margin: auto;
+}
+
 .btn-box {
 /* インライン要素をブロックのように扱い、幅や高さを指定可能にする */
     display: inline-block;
     text-align: center;
-    margin: 50px auto;
     width: 300px;
+    margin: 20px;
 
 /* 文字の装飾を消す（リンクの下線を消す） */
     text-decoration: none;
@@ -229,8 +234,8 @@ html, body {
 
 .menu-ar{
     color: #66B2FF;
-
 }
+
 
 .log-box {
     max-width: 1000px;
@@ -238,8 +243,6 @@ html, body {
     padding: 16px;
     background-color: #ffffff; 
     border: 2px solid #000000; 
-    background-color: #66B2FF;
-    border-radius: 12px;
 }
 
 .log-day {
@@ -254,5 +257,28 @@ html, body {
   border-bottom: none;
 }
 
+.log-inner{
+    background-color: #66B2FF;
+    border-radius: 12px;
+    width: 1200px;
+    margin: auto;
+}
+
+/* contact */
+.contact-adress{
+    padding: 10px;
+}
+
+.conract-adress {
+    padding: 10px;
+    line-height: 2;
+}
+
+.conract-adress img{
+    width: 200px;   /* 好きなサイズに調整 */
+    height: 200px;  /* 正方形にするのがポイント */
+    object-fit: cover; /* 画像の切れ方を自然にする */
+    border-radius: 50%;
+}
 
 

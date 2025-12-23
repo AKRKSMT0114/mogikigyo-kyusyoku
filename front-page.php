@@ -29,7 +29,7 @@
                 <img src="<?= get_template_directory_uri() ?>/img/No3.png" alt="調理">
             </div>
         </div>
-        <h3><a href="#" class="btn-box">給食ができるまで＞</a></h3>
+        <h3 class="process-btn"><a href="#" class="btn-box">給食ができるまで＞</a></h3>
     </section>
     <!-- process -->
     <!-- menu -->
@@ -66,7 +66,7 @@
             </div>
         </div>
         </div>
-        <h3><a href="#" class="btn-box">きょうの献立＞</a></h3>
+        <h3 class="process-btn"><a href="#" class="btn-box">きょうの献立＞</a></h3>
     </section>
     <!-- menu -->
     <!-- News -->
@@ -78,10 +78,22 @@
             <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
             <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
             <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
+            <div class="log-inner"></div>
         </div>
-        <a href="#" class="btn-box">もっとみる></a>
-        </div>
+        <h3 class="process-btn"><a href="#" class="btn-box">もっとみる></a>
+            </div>
     </section>
     <!-- News -->
+    <section class="front-about">
+        <h2 class="front-common-title">お問い合わせ</h2>
+        <div class="contact-adress">
+            <p>〒123-4566
+                <br> 住所 麒麟県白砂の丘市栄町3丁目12番地
+                <br>電話 0859-78-9012
+                <br>※各種お問合わせは、お電話または「お問合わせ」ページの問合わせフォームより送信してください。
+            </p>
+            <img src="<?= get_template_directory_uri() ?>/img/contact.PNG" alt="コンタクト">
+        </div>
+
 </main>
 <?php get_footer() ?>
