@@ -73,11 +73,16 @@
     <section class="front-about">
         <h2 class="front-common-title">おしらせ</h2>
         <div class="log-box">
-            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
-            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
-            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
-            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
-            <div class="log-day">2025年12月〇日 <br>〇〇しました。</div>
+            <?php if (have_posts()):
+                while (have_posts()) : the_post(); ?>
+                    <article class="log-day">
+                        <a href="<?php the_permalink(); ?>">
+                            <time><?= get_the_date(); ?></time>
+                            <h3><?php the_title() ?></h3>
+                        </a>
+                    </article>
+                <?php endwhile; ?>
+            <?php endif; ?>
             <div class="log-inner"></div>
         </div>
         <h3 class="process-btn"><a href="#" class="btn-box">もっとみる></a>
