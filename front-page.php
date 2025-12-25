@@ -39,15 +39,17 @@
         <div class="menu-list">
             <img src="<?= get_template_directory_uri() ?>/img/kondate.png" alt="献立">
             <div class="menu-item">
-                <div class="menu-section">
+                <div class="menu-main">
                     <p>ご飯</p>
                     <p>牛乳</p>
                     <p>井笠港産サーモンのメンチカツ</p>
                     <p>具だくさん味噌汁</p>
                     <p>ノンエッグマヨのポテトサラダ</p>
                     <p>2世紀梨ゼリー</p>
-                    <div class="menu-section-2">
-                        <p>地産地消食材</p>
+                </div>
+                <div class="menu-details">
+                    <div class="menu-local">
+                        <p class="section-title">地産地消食材</p>
                         <p>流星米</p>
                         <p>牛乳</p>
                         <p>井笠港産サーモン</p>
@@ -55,16 +57,15 @@
                         <p>麒麟県産大根</p>
                         <p>ジャガイモ</p>
                         <p>2世紀ナシ</p>
-                        <span class="menu-ar">
-                            <p>アレルギー情報</p>
-                            <p>牛乳</p>
-                            <p>※メンチカツの衣（米粉）</p>
-                            <p>揚げ油（こめ油）</p>
-                        </span>
+                    </div>
+                    <div class="menu-ar">
+                        <p class="section-title">アレルギー情報</p>
+                        <p>牛乳</p>
+                        <p>※メンチカツの衣（米粉）</p>
+                        <p>揚げ油（こめ油）</p>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         <h3 class="process-btn"><a href="#" class="btn-box">きょうの献立＞</a></h3>
     </section>
@@ -91,16 +92,21 @@
             </div>
         </section>
         <!-- News -->
+        <!-- contact -->
         <section class="front-about">
             <h2 class="front-common-title">お問い合わせ</h2>
-            <div class="contact-adress">
-                <p>〒123-4566
-                    <br> 住所 麒麟県白砂の丘市栄町3丁目12番地
-                    <br>電話 0859-78-9012
-                    <br>※各種お問合わせは、お電話または「お問合わせ」ページの問合わせフォームより送信してください。
-                </p>
+            <div class="contact-address">
+                <div class="contact-text">
+                    <p>
+                        〒123-4566<br>
+                        住所　麒麟県白砂の丘市栄町3丁目12番地<br>
+                        電話　0859-78-9012<br>
+                        <span class="note">※各種お問合わせは、お電話または「お問合わせ」ページの問合わせフォームより送信してください。</span>
+                    </p>
+                </div>
                 <img src="<?= get_template_directory_uri() ?>/img/contact.PNG" alt="コンタクト">
             </div>
-
+        </section> 
+        <!-- contact -->
 </main>
 <?php get_footer() ?>
