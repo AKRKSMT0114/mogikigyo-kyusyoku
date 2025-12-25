@@ -71,34 +71,36 @@
     <!-- menu -->
     <!-- News -->
     <section class="front-about">
-        <h2 class="front-common-title">おしらせ</h2>
-        <div class="log-box">
-            <?php if (have_posts()):
-                while (have_posts()) : the_post(); ?>
-                    <article class="log-day">
-                        <a href="<?php the_permalink(); ?>">
-                            <time><?= get_the_date(); ?></time>
-                            <h3><?php the_title() ?></h3>
-                        </a>
-                    </article>
-                <?php endwhile; ?>
-            <?php endif; ?>
-            <div class="log-inner"></div>
-        </div>
-        <h3 class="process-btn"><a href="#" class="btn-box">もっとみる></a>
+        <section class="front-about">
+            <h2 class="front-common-title">おしらせ</h2>
+            <div class="log-box">
+                <div class="log-list-container"> <?php if (have_posts()):
+                                                        while (have_posts()) : the_post(); ?>
+                            <article class="log-day">
+                                <a href="<?php the_permalink(); ?>">
+                                    <time><?= get_the_date('Y年 m月 d日'); ?></time>
+                                    <span class="log-title"><?php the_title() ?></span>
+                                </a>
+                            </article>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
             </div>
-    </section>
-    <!-- News -->
-    <section class="front-about">
-        <h2 class="front-common-title">お問い合わせ</h2>
-        <div class="contact-adress">
-            <p>〒123-4566
-                <br> 住所 麒麟県白砂の丘市栄町3丁目12番地
-                <br>電話 0859-78-9012
-                <br>※各種お問合わせは、お電話または「お問合わせ」ページの問合わせフォームより送信してください。
-            </p>
-            <img src="<?= get_template_directory_uri() ?>/img/contact.PNG" alt="コンタクト">
-        </div>
+            <div class="process-btn">
+                <a href="#" class="btn-box">もっとみる &gt;</a>
+            </div>
+        </section>
+        <!-- News -->
+        <section class="front-about">
+            <h2 class="front-common-title">お問い合わせ</h2>
+            <div class="contact-adress">
+                <p>〒123-4566
+                    <br> 住所 麒麟県白砂の丘市栄町3丁目12番地
+                    <br>電話 0859-78-9012
+                    <br>※各種お問合わせは、お電話または「お問合わせ」ページの問合わせフォームより送信してください。
+                </p>
+                <img src="<?= get_template_directory_uri() ?>/img/contact.PNG" alt="コンタクト">
+            </div>
 
 </main>
 <?php get_footer() ?>

@@ -241,20 +241,50 @@ html, body {
     color: #66B2FF;
 }
 
-
+/* news */
+/* 外側の水色の枠 */
 .log-box {
     max-width: 1000px;
     margin: 20px auto;
-    padding: 16px;
-    background-color: #ffffff; 
-    border: 2px solid #000000; 
+    padding: 30px; /* 水色の余白 */
+    background-color: #66B2FF; /* 画像のような水色 (調整してください) */
+    border-radius: 30px; /* 大きめの角丸 */
 }
 
+/* 中の白いリスト部分 */
+.log-list-container {
+    background-color: #ffffff;
+    border: 2px solid #000000; /* 外枠の線 */
+    overflow: hidden; /* 子要素のはみ出し防止 */
+}
+
+/* 各行の設定 */
 .log-day {
-    max-width: 1100px;
-    padding: 8px 0;
-    border-bottom: 1px solid #333;
-    font-size: 0.95rem;
+    border-bottom: 2px solid #333; /* 行間の線 */
+}
+
+/* 最後の行だけ下線を消す */
+.log-day:last-child {
+    border-bottom: none;
+}
+
+/* リンク内のレイアウト */
+.log-day a {
+    display: flex; /* 日付とタイトルを横並びに */
+    gap: 20px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+
+.log-day a:hover {
+    background-color: #f9f9f9;
+}
+
+/* タイトルのスタイル（h3だと太すぎる場合は調整） */
+.log-title {
+    font-weight: normal;
 }
 
 /* 最後の行だけ横線を消す */
@@ -348,7 +378,7 @@ html, body {
 }
 
 /* contact */
-~~~
+
 /* 追記 */
 /* 固定ページ */
 .page-parts__header {
