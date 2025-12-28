@@ -552,4 +552,72 @@ html, body {
     border-radius: 30px;
 }
 
+.about-page {
+    padding: 60px 20px;
+    text-align: center;
+}
 
+.page-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+/* 白い角丸カード */
+.white-card {
+    background-color: #fff;
+    max-width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 40px; /* 大きめの角丸 */
+    padding: 60px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* 軽い影（お好みで） */
+}
+
+/* 中身の横並び設定 */
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* 画像とテキストの間隔 */
+}
+
+/* 左側の画像 */
+.card-image img {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%; /* 丸いイラストの場合 */
+}
+
+/* 右側のテキスト領域 */
+.card-text {
+    text-align: center;
+    color: #66B2FF;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.char-name {
+    color: #66B2FF
+}
+
+.card-text p {
+    color: #000000;
+    font-size: 40px;
+}
+.card-text p {
+    line-height: 1.8;
+    font-size: 30px;
+}
+
+/* スマホ対応（縦並びにする） */
+@media (max-width: 768px) {
+    .card-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .card-image img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
