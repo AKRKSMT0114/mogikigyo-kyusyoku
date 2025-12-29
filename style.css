@@ -621,3 +621,178 @@ html, body {
         max-width: 250px;
     }
 }
+
+/* 全体の背景色 */
+.bg-cream {
+    padding: 60px 0;
+}
+
+/* 1. メインビジュアル */
+.main-visual {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+.main-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+}
+
+/* 2. 白いカード（沿革部分） */
+.info-card {
+    background-color: #fff;
+    max-width: 1100px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    border-radius: 10px; /* 角を少し丸く */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* 横並びの設定 */
+.card-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.text-area {
+    flex: 1; /* テキスト側を広げる */
+    line-height: 1.8;
+}
+
+.image-area img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* 丸いイラストの場合 */
+
+}
+
+/* スマホ対応：縦に並べる */
+@media (max-width: 768px) {
+    .card-flex {
+        flex-direction: column;
+    }
+    .image-area {
+        order: -1; /* 画像を上に持ってくる場合 */
+    }
+}
+
+.menu-date{
+    padding: 20px;
+    margin-left: 300px;
+    font-size: 30px;
+    text-align: left;
+    left: 20px;
+    font-size: 30px;
+}
+
+/* ベースの背景色 */
+.menu-page {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* ヘッダー部分 */
+.menu-header {
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 10px;
+}
+
+.menu-title-badge {
+    background-color: #66B2FF;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 写真と献立の横並び */
+.menu-flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.menu-photo img {
+    width: 100%;
+    height: 500px;
+    border-radius: 40px; /* 画像の角を大きく丸める */
+    border: 1px solid #000000;
+
+}
+
+/* 献立の白いボックス */
+.menu-details-card {
+    background-color: #fff;
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 40px;
+    border: 1px solid #000000;
+    text-align: left;
+}
+
+.menu-list {
+    font-weight: bold;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    gap: 0;
+    display: block;
+    font-size: 20px;
+}
+
+.menu-info-flex {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blue-text {
+    color: #66B2FF;
+    font-weight: bold;
+}
+
+/* メッセージボックス */
+.message-box {
+    background-color: #fff;
+    border: 1px solid #000000;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* ボタンのデザイン */
+.btn-white {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #000000;
+    padding: 10px 40px;
+    text-decoration: none;
+    width: 350px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+}

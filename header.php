@@ -19,8 +19,6 @@
             <li><a href="#おしらせ">おしらせ</a></li>
             <li><a href="#お問い合わせ">お問い合わせ</a></li>
         </ul>
-
-        <!-- 追加 -->
         <div id="btn" class="hamburger__btn">
             <i class="fas fa-bars"></i>
         </div>
@@ -32,5 +30,5 @@
             <li><a href="#お問い合わせ">お問い合わせ</a></li>
         </ul>
         <div id="modal" class="modal-sp"></div>
-        <!-- 追加 -->
+        </div>
     </header>
