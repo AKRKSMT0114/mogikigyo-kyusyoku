@@ -659,13 +659,6 @@ html, body {
     border-radius: 10px; /* 角を少し丸く */
 }
 
-.section-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
 /* 横並びの設定 */
 .card-flex {
     display: flex;
@@ -756,21 +749,17 @@ html, body {
     font-weight: bold;
     line-height: 1.8;
     margin-bottom: 30px;
-    gap: 0;
-    display: block;
     font-size: 20px;
 }
 
 .menu-info-flex {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
     font-size: 20px;
 }
 
 .blue-text {
     color: #66B2FF;
-    font-weight: bold;
 }
 
 /* メッセージボックス */
@@ -795,4 +784,74 @@ html, body {
     color: #000000;
     font-size: 30px;
     font-weight: bold;
+}
+
+.process-page {
+    padding: 60px 0 100px;
+    position: relative;
+}
+
+.page-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+/* 3カラムのグリッド */
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 40px; /* 上下左右の間隔 */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.process-item {
+    position: relative;
+    text-align: center;
+}
+
+/* 工程の画像（大きな角丸） */
+.step-image img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* 正方形にする */
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.step-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* 矢印のデザインと配置 */
+.arrow {
+    position: absolute;
+    top: 40%;
+    right: -35px; /* 右側に突き出させる */
+    font-size: 30px;
+    color: #66B2FF
+}
+
+/* 右下のキャラクター */
+.bottom-char {
+    position: absolute;
+    right: 5%;
+    bottom: 50px;
+    width: 200px;
+}
+
+.bottom-char img {
+    border-radius: 50%;
+}
+/* スマホ対応（2列または1列） */
+@media (max-width: 768px) {
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .arrow {
+        display: none; /* スマホでは矢印を消すか向きを変える */
+    }
 }
