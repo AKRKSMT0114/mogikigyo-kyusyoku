@@ -128,6 +128,7 @@ html, body {
     align-items: center; 
     justify-content: center; 
     gap: 10px; 
+    margin-bottom: 30px;
 }
 
 .process-item img {
@@ -149,7 +150,7 @@ html, body {
 }
 
 /* 矢印の先端（三角部分） */
-.arrow::after {
+.arrow::before {
     content: "";
     position: absolute;
     right: -15px;         /* 先端を少し外に出す */
@@ -356,40 +357,120 @@ html, body {
     display: block;
     margin-top: 10px;
 }
+
+
 /* mobile */
 /* スマホ用メニューの初期状態（画面の右側に隠す） */
-.menu-sp {
-    position: fixed;
-    top: 0;
-    right: -100%; /* 100%分右にずらして隠す */
-    width: 80%;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 999;
-    transition: right 0.4s ease; /* スライドのアニメーション */
-    padding-top: 60px;
+/* --- 共通：基本スタイル --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 4%;
+    background-color: #FFFBE6; /* 背景のクリーム色 */
 }
 
-/* JSで追加されるクラス：メニューを表示させる */
-.menu-sp.add-menu-sp {
-    right: 0; /* 右端を0にすることで画面内に入ってくる */
+.logo-name {
+    color: #00A0E9; /* ロゴの水色 */
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-/* モーダル（背景の暗幕）：初期状態は隠す */
-.modal-sp {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
-    display: none; /* 最初は消しておく */
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/* JSで追加されるクラス：モーダルを表示させる */
-.modal-sp.add-modal-sp {
-    display: block;
+.header a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* --- PC版の設定 (769px以上) --- */
+@media (min-width: 769px) {
+    /* スマホ専用のボタンとメニュー、モーダルを隠す */
+    .hamburger__btn, .menu-sp, .modal-sp {
+        display: none;
+    }
+
+    .menu-pc {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* 【ホバー効果】マウスを乗せた時に色を変える */
+    .menu-pc a {
+        transition: color 0.3s ease;
+    }
+    .menu-pc a:hover {
+        color: #66B2FF;
+    }
+
+    /* 「お問い合わせ」だけボタン風にするデザイン */
+    .menu-pc li:last-child a {
+        background-color: #66B2FF;
+        padding: 8px 20px;
+        border-radius: 25px;
+        color: #333;
+    }
+    .menu-pc li:last-child a:hover {
+        opacity: 0.8;
+    }
+}
+
+/* --- スマホ版の設定 (768px以下) --- */
+@media (max-width: 768px) {
+    /* PC用メニューを隠す */
+    .menu-pc {
+        display: none;
+    }
+
+    /* ハンバーガーボタンのデザイン */
+    .hamburger__btn {
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1000;
+        color: #66B2FF;
+    }
+
+    /* スライドメニューの初期状態（画面の右外に隠す） */
+    .menu-sp {
+        position: fixed;
+        top: 0;
+        right: -100%; /* 隠す */
+        width: 70%;
+        height: 100vh;
+        background-color: #fff;
+        padding: 80px 30px;
+        transition: right 0.5s ease; /* スライドのアニメーション */
+        z-index: 999;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    }
+
+    .menu-sp li {
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+    }
+
+    /* JavaScriptでクラスがついた時の表示状態 */
+    .menu-sp.add-menu-sp {
+        right: 0; /* 画面内に引き出す */
+    }
+
+    /* 背景を暗くするモーダル */
+    .modal-sp {
+        display: none; /* 最初は隠す */
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 998;
+    }
+    .modal-sp.add-modal-sp {
+        display: block; /* クラスがついたら表示 */
+    }
 }
 /* contact */
 
@@ -506,6 +587,7 @@ html, body {
     font-size: 0.9rem;
 }
 
+/* 404 */
 /* 404ページ全体の背景と余白 */
 .error-page {
     text-align: center;
@@ -552,6 +634,7 @@ html, body {
     border-radius: 30px;
 }
 
+/* about-page */
 .about-page {
     padding: 60px 20px;
     text-align: center;
@@ -610,17 +693,6 @@ html, body {
     font-size: 30px;
 }
 
-/* スマホ対応（縦並びにする） */
-@media (max-width: 768px) {
-    .card-content {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .card-image img {
-        width: 100%;
-        max-width: 250px;
-    }
-}
 
 /* 全体の背景色 */
 .bg-cream {
@@ -678,15 +750,7 @@ html, body {
 
 }
 
-/* スマホ対応：縦に並べる */
-@media (max-width: 768px) {
-    .card-flex {
-        flex-direction: column;
-    }
-    .image-area {
-        order: -1; /* 画像を上に持ってくる場合 */
-    }
-}
+
 
 .menu-date{
     padding: 20px;
@@ -853,5 +917,27 @@ html, body {
     }
     .arrow {
         display: none; /* スマホでは矢印を消すか向きを変える */
+    }
+}
+
+/* スマホ対応：縦に並べる */
+@media (max-width: 768px) {
+    .card-flex {
+        flex-direction: column;
+    }
+    .image-area {
+        order: -1; /* 画像を上に持ってくる場合 */
+    }
+}
+
+/* スマホ対応（縦並びにする） */
+@media (max-width: 768px) {
+    .card-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .card-image img {
+        width: 100%;
+        max-width: 250px;
     }
 }
