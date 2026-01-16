@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: 紹介ページテンプレート
+ * Template Name: sunamaru
  */
 get_header(); ?>
 
