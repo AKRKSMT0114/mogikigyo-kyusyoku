@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: menu
+ * Template Name: きょうの献立
  */
 get_header(); ?>
 
