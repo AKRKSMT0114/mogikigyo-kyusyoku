@@ -29,7 +29,7 @@
                 <img src="<?= get_template_directory_uri() ?>/img/No3.png" alt="調理">
             </div>
         </div>
-        <h3 class="process-btn"><a href="http://localhost/mogi-kyusyoku/wordpress/%e7%b5%a6%e9%a3%9f%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%81%be%e3%81%a7/" class="btn-box">給食ができるまで＞</a></h3>
+        <h3 class="process-btn"><a href="https://siraoka-kyusyoku.punyu.jp/%e3%82%8f%e3%81%9f%e3%81%97%e3%81%9f%e3%81%a1%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/" class="btn-box">給食ができるまで＞</a></h3>
     </section>
     <!-- process -->
     <!-- menu -->
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <h3 class="process-btn"><a href="http://localhost/mogi-kyusyoku/wordpress/%e3%81%8d%e3%82%87%e3%81%86%e3%81%ae%e7%8c%ae%e7%ab%8b/" class="btn-box">きょうの献立＞</a></h3>
+        <h3 class="process-btn"><a href="https://siraoka-kyusyoku.punyu.jp/%e7%b5%a6%e9%a3%9f%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%81%be%e3%81%a7/" class="btn-box">きょうの献立＞</a></h3>
     </section>
     <!-- menu -->
     <!-- News -->
