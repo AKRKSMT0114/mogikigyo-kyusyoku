@@ -1,4 +1,9 @@
-<?php get_header() ?>
+<?php 
+/**
+ * Template Name: トップページ
+ */
+
+get_header() ?>
 <main>
     <!-- fv -->
     <section class="front-fv">
