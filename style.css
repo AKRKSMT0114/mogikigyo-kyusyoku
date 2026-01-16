@@ -19,12 +19,7 @@ html, body {
     justify-content: space-between;
     height: 70px;
     margin: 10px;
-.hamburger__btn{display: none;}
-.menu-sp{display: none;}
-.modal-sp{display: none;}
-
 }
-
 
 .logo-name{
     color: #66B2FF;
@@ -35,6 +30,12 @@ html, body {
 .menu-pc{
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .menu-pc {
+        display: none;
+    }
 }
 
 .menu-pc li{
@@ -55,7 +56,20 @@ html, body {
     background: #66B2FF;
     padding: 10px 30px;
     border-radius: 50px;
-}    
+}
+
+.menu-sp {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-sp {
+        display: flex !important;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+}
 
 /* footer */
 .footer{
@@ -65,12 +79,7 @@ html, body {
 .footer p{
     color: #fff;
     text-align: center;
-}    
-
-.hamburger__btn{display: none;}
-.menu-sp{display: none;}
-.modal-sp{display: none;}
-
+}
 
 /* fv */
 .front-fv{
@@ -192,6 +201,17 @@ html, body {
     
 /* マウスを乗せた時に少し変化させるための準備 */
     transition: 0.3s;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .btn-box {
+        width: 100%;
+        max-width: 300px;
+        font-size: 20px;
+        margin: 10px auto;
+        padding: 15px 10px;
+    }
 }
 
 /* マウスを乗せた（ホバー）時の動き（お好みで） */
@@ -212,6 +232,8 @@ html, body {
     align-items: flex-start;
     gap: 30px; /* 画像とボックスの間の隙間 */
     margin: 0 auto;
+    max-width: 1100px;
+    padding: 20px;
 }
 
 .menu-list img {
@@ -230,6 +252,21 @@ html, body {
     border: 2px solid #000;
     padding: 30px; /* 中の余白を均等に */
     box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .menu-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu-list img {
+        width: 100%;
+        height: auto;
+    }
+    .menu-item {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* テキスト全般の設定 */
@@ -318,223 +355,6 @@ html, body {
 .log-day:last-child {
     border-bottom: none;
 }
-
-.log-inner{
-    background-color: #66B2FF;
-    border-radius: 12px;
-    width: 1200px;
-    margin: auto;
-}
-
-/* contact */
-/* 親要素：中身を横並びにする */
-.contact-address {
-    display: flex;
-    justify-content: center; /* 中央に寄せる */
-    align-items: center;     /* 上下の中央を揃える */
-    gap: 30px;               /* テキストと画像の間の隙間 */
-    padding: 40px 10px;
-    font-size: 20px;
-}
-
-/* テキスト部分の調整 */
-.contact-text p {
-    line-height: 2;
-    margin: 0;
-}
-
-/* 画像の調整 */
-.contact-address img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: none;
-}
-
-/* 注釈（※）を少し小さくする場合 */
-.note {
-    display: block;
-    margin-top: 10px;
-}
-
-
-/* mobile */
-/* スマホ用メニューの初期状態（画面の右側に隠す） */
-/* --- 共通：基本スタイル --- */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 4%;
-    background-color: #FFFBE6; /* 背景のクリーム色 */
-}
-
-.logo-name {
-    color: #00A0E9; /* ロゴの水色 */
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.header ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.header a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-/* --- PC版の設定 (769px以上) --- */
-@media (min-width: 769px) {
-    /* スマホ専用のボタンとメニュー、モーダルを隠す */
-    .hamburger__btn, .menu-sp, .modal-sp {
-        display: none;
-    }
-
-    .menu-pc {
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-
-    /* 【ホバー効果】マウスを乗せた時に色を変える */
-    .menu-pc a {
-        transition: color 0.3s ease;
-    }
-    .menu-pc a:hover {
-        color: #66B2FF;
-    }
-
-    /* 「お問い合わせ」だけボタン風にするデザイン */
-    .menu-pc li:last-child a {
-        background-color: #66B2FF;
-        padding: 8px 20px;
-        border-radius: 25px;
-        color: #333;
-    }
-    .menu-pc li:last-child a:hover {
-        opacity: 0.8;
-    }
-}
-
-/* --- スマホ版の設定 (768px以下) --- */
-@media (max-width: 768px) {
-    /* PC用メニューを隠す */
-    .menu-pc {
-        display: none;
-    }
-
-    /* ハンバーガーボタンのデザイン */
-    .hamburger__btn {
-        font-size: 28px;
-        cursor: pointer;
-        z-index: 1000;
-        color: #66B2FF;
-    }
-
-    /* スライドメニューの初期状態（画面の右外に隠す） */
-    .menu-sp {
-        position: fixed;
-        top: 0;
-        right: -100%; /* 隠す */
-        width: 70%;
-        height: 100vh;
-        background-color: #fff;
-        padding: 80px 30px;
-        transition: right 0.5s ease; /* スライドのアニメーション */
-        z-index: 999;
-        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-    }
-
-    .menu-sp li {
-        margin-bottom: 30px;
-        font-size: 1.1rem;
-    }
-
-    /* JavaScriptでクラスがついた時の表示状態 */
-    .menu-sp.add-menu-sp {
-        right: 0; /* 画面内に引き出す */
-    }
-
-    /* 背景を暗くするモーダル */
-    .modal-sp {
-        display: none; /* 最初は隠す */
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.5);
-        z-index: 998;
-    }
-    .modal-sp.add-modal-sp {
-        display: block; /* クラスがついたら表示 */
-    }
-/* ハンバーガーボタンを表示 */
-    .hamburger__btn {
-        display: block;
-        font-size: 28px;
-        cursor: pointer;
-        z-index: 1000;
-        color: #66B2FF;
-    }
-
-    /* スマホメニュー本体 */
-    .menu-sp {
-        display: block;
-        position: fixed;
-        top: 0;
-        right: -100%; /* 右側に隠す */
-        width: 70%;
-        height: 100vh;
-        background-color: #fff;
-        padding: 80px 30px;
-        transition: right 0.4s ease;
-        z-index: 999;
-        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-        box-sizing: border-box;
-    }
-    
-    .menu-sp li {
-        list-style: none;
-        margin-bottom: 30px;
-    }
-    .menu-sp a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-
-    /* モーダル背景 */
-    .modal-sp {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0,0,0,0.5);
-        z-index: 998;
-    }
-
-    /* JavaScriptでクラスが付与された時の動き */
-    .menu-sp.add-menu-sp {
-        right: 0; /* 画面内に出てくる */
-    }
-    .modal-sp.add-modal-sp {
-        display: block; /* 表示される */
-    }
-
-
-
-
-
-
-
-}
-/* contact */
 
 /* 追記 */
 /* 固定ページ */
@@ -748,9 +568,6 @@ html, body {
 
 .card-text p {
     color: #000000;
-    font-size: 40px;
-}
-.card-text p {
     line-height: 1.8;
     font-size: 30px;
 }
@@ -819,8 +636,6 @@ html, body {
     margin-left: 300px;
     font-size: 30px;
     text-align: left;
-    left: 20px;
-    font-size: 30px;
 }
 
 /* ベースの背景色 */
@@ -831,6 +646,7 @@ html, body {
 
 /* ヘッダー部分 */
 .menu-header {
+    display: flex;
     align-items: center;
     gap: 50px;
     margin-bottom: 10px;
@@ -850,6 +666,9 @@ html, body {
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-photo img {
@@ -857,7 +676,6 @@ html, body {
     height: 500px;
     border-radius: 40px; /* 画像の角を大きく丸める */
     border: 1px solid #000000;
-
 }
 
 /* 献立の白いボックス */
@@ -869,6 +687,24 @@ html, body {
     border-radius: 40px;
     border: 1px solid #000000;
     text-align: left;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .menu-flex-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    .menu-photo img {
+        height: auto;
+        min-height: 300px;
+    }
+    .menu-details-card {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
 }
 
 .menu-list {
