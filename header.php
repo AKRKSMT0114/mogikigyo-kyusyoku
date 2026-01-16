@@ -14,20 +14,20 @@
         </h1>
         <ul class="menu-pc">
             <li><a href="<?php echo home_url('/tuite_page/'); ?>">わたしたちについて＞</a></li>
-            <li><a href="#給食ができるまで">給食ができるまで</a></li>
-            <li><a href="#きょうの献立">きょうの献立</a></li>
+            <li><a href="<a href="<?php echo home_url('/kyusyoku_no/'); ?>" class="btn-box">給食ができるまで＞</a>></li>
+            <li><a href="<?php echo home_url('/menu/'); ?>" class="btn-box">きょうの献立＞</a></li>
             <li><a href="#おしらせ">おしらせ</a></li>
-            <li><a href="#お問い合わせ">お問い合わせ</a></li>
+            <li><a href="<?php echo home_url('/contact/'); ?>" class="btn-box">お問い合わせ＞</a></li>
         </ul>
         <div id="btn" class="hamburger__btn">
             <i class="fas fa-bars"></i>
         </div>
         <ul id="menu" class="menu-sp">
             <li><a href="<?php echo home_url('/tuite_page/'); ?>">わたしたちについて</a></li>
-            <li><a href="#給食ができるまで">給食ができるまで</a></li>
-            <li><a href="#きょうの献立">きょうの献立</a></li>
+            <li><a href="<a href="<?php echo home_url('/kyusyoku_no/'); ?>" class="btn-box">給食ができるまで＞</a>></li>
+            <li><a href="<?php echo home_url('/menu/'); ?>" class="btn-box">きょうの献立＞</a></li>
             <li><a href="#おしらせ">おしらせ</a></li>
-            <li><a href="#お問い合わせ">お問い合わせ</a></li>
+            <li><a href="<?php echo home_url('/contact/'); ?>" class="btn-box">お問い合わせ＞</a></li>
         </ul>
         <div id="modal" class="modal-sp"></div>
     </header>
