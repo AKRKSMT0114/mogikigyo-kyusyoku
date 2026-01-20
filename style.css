@@ -39,7 +39,6 @@ html, body {
 }
 
 .menu-pc li{
-    margin: 0 30px;
     list-style: none;
 }
 
@@ -179,7 +178,7 @@ html, body {
 /* インライン要素をブロックのように扱い、幅や高さを指定可能にする */
     display: inline-block;
     text-align: center;
-    width: 300px;
+    width: 200px;
     margin: 20px;
 
 /* 文字の装飾を消す（リンクの下線を消す） */

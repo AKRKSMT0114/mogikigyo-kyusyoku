@@ -14,8 +14,8 @@
         </h1>
         <ul class="menu-pc">
             <li><a href="<?php echo home_url('/tuite_page/'); ?>">わたしたちについて＞</a></li>
-            <li><a href="<a href="<?php echo home_url('/kyusyoku_no/'); ?>" class="btn-box">給食ができるまで＞</a>></li>
-            <li><a href="<?php echo home_url('/menu/'); ?>" class="btn-box">きょうの献立＞</a></li>
+            <li><a href="<?php echo home_url('/kyusyoku_no/'); ?>">給食ができるまで＞</a></li>
+            <li><a href="<?php echo home_url('/menu/'); ?>" >きょうの献立＞</a></li>
             <li><a href="#おしらせ">おしらせ</a></li>
             <li><a href="<?php echo home_url('/contact/'); ?>" class="btn-box">お問い合わせ＞</a></li>
         </ul>
@@ -24,8 +24,8 @@
         </div>
         <ul id="menu" class="menu-sp">
             <li><a href="<?php echo home_url('/tuite_page/'); ?>">わたしたちについて</a></li>
-            <li><a href="<a href="<?php echo home_url('/kyusyoku_no/'); ?>" class="btn-box">給食ができるまで＞</a>></li>
-            <li><a href="<?php echo home_url('/menu/'); ?>" class="btn-box">きょうの献立＞</a></li>
+            <li><a href="<?php echo home_url('/kyusyoku_no/'); ?>" >給食ができるまで＞</a>></li>
+            <li><a href="<?php echo home_url('/menu/'); ?>">きょうの献立＞</a></li>
             <li><a href="#おしらせ">おしらせ</a></li>
             <li><a href="<?php echo home_url('/contact/'); ?>" class="btn-box">お問い合わせ＞</a></li>
         </ul>
