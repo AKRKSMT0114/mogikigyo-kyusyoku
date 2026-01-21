@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: 給食ができるまで
  */
@@ -26,16 +27,20 @@ get_header(); ?>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $step['img']; ?>" alt="工程<?php echo $index + 1; ?>">
                     </div>
                     <p class="step-text"><?php echo $step['text']; ?></p>
-                    
-                    <?php if ($index != 2 && $index != 5) : // 3番目と6番目以外に矢印を表示 ?>
+
+                    <?php if ($index != 2 && $index != 5) : // 3番目と6番目以外に矢印を表示 
+                    ?>
                         <div class="arrow"></div>
                     <?php endif; ?>
                 </div>
             <?php endforeach; ?>
         </div>
-        
+
         <div class="bottom-char">
             <img src="<?php echo get_template_directory_uri(); ?>/img/no-page.png" alt="すなまる">
+        </div>
+        <div class="history-button">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="btn-white">トップへ戻る ＞</a>
         </div>
     </div>
 </main>

@@ -32,6 +32,10 @@ html, body {
     align-items: center;
 }
 
+.hamburger__btn{
+    display: none;
+}
+
 @media (max-width: 768px) {
     .menu-pc {
         display: none;
@@ -68,7 +72,11 @@ html, body {
         gap: 15px;
         padding: 20px;
     }
-}
+    .hamburger__btn{
+        display: block;
+    }
+    }
+
 
 /* footer */
 .footer{
@@ -187,7 +195,7 @@ html, body {
 /* 文字の色と太さ */
     color: #000000;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     
 /* 枠線の設定（太さ 実線 黒） */
     border: 1px solid #000000;
@@ -798,14 +806,17 @@ html, body {
 
 /* 右下のキャラクター */
 .bottom-char {
-    position: absolute;
-    right: 5%;
-    bottom: 50px;
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
 }
 
 .bottom-char img {
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 /* スマホ対応（2列または1列） */
 @media (max-width: 768px) {
@@ -837,4 +848,11 @@ html, body {
         width: 100%;
         max-width: 250px;
     }
+}
+
+/* ボタンを中央に配置 */
+.history-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
