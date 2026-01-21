@@ -34,7 +34,7 @@ get_header() ?>
                 <img src="<?= get_template_directory_uri() ?>/img/No3.png" alt="調理">
             </div>
         </div>
-        <h3 class="process-btn"><a href="https://siraoka-kyusyoku.punyu.jp/%e3%82%8f%e3%81%9f%e3%81%97%e3%81%9f%e3%81%a1%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/" class="btn-box">給食ができるまで＞</a></h3>
+        <h3 class="process-btn"><a href="<?php echo home_url('/kyusyoku_no/'); ?>" class="btn-box">給食ができるまで＞</a></h3>
     </section>
     <!-- process -->
     <!-- menu -->
@@ -72,7 +72,7 @@ get_header() ?>
                 </div>
             </div>
         </div>
-        <h3 class="process-btn"><a href="https://siraoka-kyusyoku.punyu.jp/%e7%b5%a6%e9%a3%9f%e3%81%8c%e3%81%a7%e3%81%8d%e3%82%8b%e3%81%be%e3%81%a7/" class="btn-box">きょうの献立＞</a></h3>
+        <h3 class="process-btn"><a href="<?php echo home_url('/menu/'); ?>" class="btn-box">きょうの献立＞</a></h3>
     </section>
     <!-- menu -->
     <!-- News -->
@@ -93,7 +93,7 @@ get_header() ?>
                 </div>
             </div>
             <div class="process-btn">
-                <a href="#" class="btn-box">もっとみる &gt;</a>
+                <a href="<?php echo home_url('/news_page/'); ?>" class="btn-box">もっとみる &gt;</a>
             </div>
         </section>
         <!-- News -->
