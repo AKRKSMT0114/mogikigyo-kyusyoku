@@ -12,12 +12,10 @@ get_header(); ?>
             <h2>わたしたちについて</h2>
         </div>
     </section>
-
     <div class="bg-cream">
         <div class="container">
             <section class="info-card">
                 <h3 class="section-title">沿革</h3>
-
                 <div class="card-flex">
                     <div class="text-area">
                         <p>テキストテキストテキストテキストテキストテキスト
@@ -27,10 +25,12 @@ get_header(); ?>
                             テキストテキストテキストテキストテキストテキスト（ここに沿革の内容）
                         </p>
                     </div>
-
                     <div class="image-area">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/tuite-page.PNG" alt="すなまる">
                     </div>
+                </div>
+                <div class="history-button">
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="btn-white">トップへ戻る ＞</a>
                 </div>
             </section>
         </div>
