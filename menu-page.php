@@ -45,7 +45,7 @@ get_header(); ?>
                 テキストテキストテキストテキストテキストテキスト
             </div>
             <div class="history-button">
-                <a href="#" class="btn-white">今までのこんだてへ ＞</a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn-white">トップへ戻る ＞</a>
             </div>
         </div>
     </div>
