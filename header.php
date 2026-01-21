@@ -16,7 +16,7 @@
             <li><a href="<?php echo home_url('/tuite_page/'); ?>">わたしたちについて＞</a></li>
             <li><a href="<?php echo home_url('/kyusyoku_no/'); ?>">給食ができるまで＞</a></li>
             <li><a href="<?php echo home_url('/menu/'); ?>" >きょうの献立＞</a></li>
-            <li><a href="#おしらせ">おしらせ</a></li>
+            <li><a href="<?php echo home_url('/news_page/'); ?>">おしらせ</a></li>
             <li><a href="<?php echo home_url('/contact/'); ?>" class="btn-box">お問い合わせ＞</a></li>
         </ul>
         <div id="btn" class="hamburger__btn">
@@ -26,7 +26,7 @@
             <li><a href="<?php echo home_url('/tuite_page/'); ?>">わたしたちについて</a></li>
             <li><a href="<?php echo home_url('/kyusyoku_no/'); ?>" >給食ができるまで＞</a>></li>
             <li><a href="<?php echo home_url('/menu/'); ?>">きょうの献立＞</a></li>
-            <li><a href="#おしらせ">おしらせ</a></li>
+            <li><a href="<?php echo home_url('/news_page/'); ?>">おしらせ</a></li>
             <li><a href="<?php echo home_url('/contact/'); ?>" class="btn-box">お問い合わせ＞</a></li>
         </ul>
         <div id="modal" class="modal-sp"></div>
